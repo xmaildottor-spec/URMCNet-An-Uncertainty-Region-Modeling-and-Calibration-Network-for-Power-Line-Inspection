@@ -53,6 +53,10 @@ Dataset：
 
 Notice:In the original VITLD dataset, every four images correspond to one sliced sample. During testing, please ensure that the images are processed in groups of four and in their original order.
 
+For the related training and testing code, please refer to: Multimodal-FFM-TLD: https://github.com/hyeyeon08/Multimodal-FFM-TLD/tree/main
+
+
+
 
 
 
