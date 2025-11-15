@@ -18,10 +18,6 @@ In the original VITLD dataset, every four images correspond to one sliced sample
 ## Acknowledgement:
 Thanks 【[Multimodal-FFM-TLD](https://github.com/hyeyeon08/Multimodal-FFM-TLD)】 for providing the relevant training and testing data as well as the associated code.
 
-The related algorithm is currently under patent review. The source code will be released publicly once the review process is completed. Thank you for your understanding and patience.
-
-### Our research group has been collecting inspection images from power-related scenarios over the long term, including UAV visible-light images, UAV multispectral images, and UAV 3D point cloud data.
-
 ## Figure Correction
 ![image](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/img.png)
 
