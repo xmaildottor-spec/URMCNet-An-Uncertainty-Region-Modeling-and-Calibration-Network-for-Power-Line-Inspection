@@ -18,7 +18,7 @@ In the original VITLD dataset, every four images correspond to one sliced sample
 ## Acknowledgement:
 Thanks 【[Multimodal-FFM-TLD](https://github.com/hyeyeon08/Multimodal-FFM-TLD)】 for providing the relevant training and testing data as well as the associated code.
 
-The errata are as follows:
+Due to an incorrect file uploaded during the editing process, the correction is hereby provided as follows:
 ![image](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
 
 ## Powerline Stereo 3D Reconstruction & UAV Path Planning System 
