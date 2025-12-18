@@ -22,9 +22,13 @@ https://pan.baidu.com/s/1gmfbENIXuLGKtdlqYTqrdA?pwd=r8zw r8zw
 * **fp_GT**: Ground-truth labels corresponding to false positive (FP) samples.
 
 In the testing stage of this work, we refer to previous studies 【1】【2】【3】【4】, and record the corresponding recall, precision, and average IoU metrics in Table I.
+
 1：Cheng Y, Chen Z, Liu D. PL-UNeXt: per-stage edge detail and line feature guided segmentation for power line detection[C]//2023 IEEE International Conference on Image Processing (ICIP). IEEE, 2023: 261-265.
+
 2：Abdelfattah R, Wang X, Wang S. Plgan: Generative adversarial networks for power-line segmentation in aerial images[J]. IEEE Transactions on Image Processing, 2023, 32: 6248-6259.
+
 3：Choi H, Koo G, Kim B J, et al. Real-time power line detection network using visible light and infrared images[C]//2019 International Conference on Image and Vision Computing New Zealand (IVCNZ). IEEE, 2019: 1-6.
+
 4：Zhang S, Zhang X, Ren W, et al. Bringing RGB and IR Together: Hierarchical Multi-Modal Enhancement for Robust Transmission Line Detection[J]. arXiv preprint arXiv:2501.15099, 2025.
 
 ## Notice:
