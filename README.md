@@ -42,6 +42,7 @@ Thanks „Äê[Multimodal-FFM-TLD](https://github.com/hyeyeon08/Multimodal-FFM-TLD)„
 
 Due to an incorrect file uploaded during the editing process, the correction is hereby provided as follows:
 ![image](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
+Note: Infrared images are included solely for dataset visualization purposes. They are not used in the training or testing phases of the network.
 
 ## Powerline Stereo 3D Reconstruction & UAV Path Planning System 
 After obtaining the power line masks, we provide a follow-up stereo-camera 3D reconstruction demo for UAV path planning and obstacle avoidance.
