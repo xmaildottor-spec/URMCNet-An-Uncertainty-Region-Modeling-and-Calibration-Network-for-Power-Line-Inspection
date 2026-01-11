@@ -49,6 +49,7 @@ Note: Following the original publication, we further refined the training pipeli
 * Optimizer: AdamW (Betas: 0.9, 0.999)
 * Learning Rate Strategy: Initial LR of 3e-4 with a Polynomial Decay scheduler (power=0.9).
 * Regularization: Weight decay set to 0.005.
+
 These optimized settings allow the model to reach new state-of-the-art results on the dataset.
 
 
