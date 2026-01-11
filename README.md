@@ -44,6 +44,14 @@ Due to an incorrect file uploaded during the editing process, the correction is 
 ![image](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
 Note: Infrared images are included solely for dataset visualization purposes. They are not used in the training or testing phases of the network.
 
+
+Following the original publication, we further refined the training pipeline and hyperparameters, achieving performance metrics significantly superior to those reported in the paper. The updated training configuration is as follows:
+Optimizer: AdamW (Betas: 0.9, 0.999)
+Learning Rate Strategy: Initial LR of 3e-4 with a Polynomial Decay scheduler (power=0.9).
+Regularization: Weight decay set to 0.005.
+These optimized settings allow the model to reach new state-of-the-art results on the dataset.
+
+
 ## Powerline Stereo 3D Reconstruction & UAV Path Planning System 
 After obtaining the power line masks, we provide a follow-up stereo-camera 3D reconstruction demo for UAV path planning and obstacle avoidance.
 
