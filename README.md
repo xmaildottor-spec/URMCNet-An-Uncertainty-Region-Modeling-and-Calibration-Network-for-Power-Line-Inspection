@@ -73,6 +73,10 @@ Following the original publication, we refined the training pipeline to achieve 
 We compare our method with PL-UNeXt [1], Plgan [2], and other approaches [3][4], reporting Recall, Precision, and Average IoU. Furthermore, following the comparison methodology of Plgan [2], we allow for a small pixel offset (tolerance) during the testing phase.
 ---
 
+## 🙏 Acknowledgement
+
+We thank [Multimodal-FFM-TLD](https://github.com/hyeyeon08/Multimodal-FFM-TLD) for providing relevant training/testing data and associated code.
+
 ## 🚁 Extension: Stereo 3D Reconstruction & UAV Path Planning
 
 Beyond segmentation, we provide a demo for **stereo-camera 3D reconstruction** to assist in UAV obstacle avoidance.
@@ -116,6 +120,3 @@ An Open3D-based visual simulation for real-time UAV movement debugging.
 3.  Choi H, Koo G, Kim B J, et al. *Real-time power line detection network using visible light and infrared images*. IVCNZ 2019.
 4.  Zhang S, Zhang X, Ren W, et al. *Bringing RGB and IR Together: Hierarchical Multi-Modal Enhancement for Robust Transmission Line Detection*. arXiv 2025.
 
-## 🙏 Acknowledgement
-
-We thank [Multimodal-FFM-TLD](https://github.com/hyeyeon08/Multimodal-FFM-TLD) for providing relevant training/testing data and associated code.
