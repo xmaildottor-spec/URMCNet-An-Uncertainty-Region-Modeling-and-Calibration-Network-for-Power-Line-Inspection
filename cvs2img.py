@@ -12,10 +12,6 @@ Description:
 
 Usage:
     python csv2img_converter.py --input_dir "./dataset/val/ir" --output_dir "./dataset/val/ir_jpg"
-
-Author: [Your Name/Lab Name]
-Date: 2026-01-13
-License: MIT License
 """
 
 import os
@@ -157,4 +153,5 @@ def main():
     process_dataset(args.input_dir, args.output_dir)
 
 if __name__ == "__main__":
+
     main()
