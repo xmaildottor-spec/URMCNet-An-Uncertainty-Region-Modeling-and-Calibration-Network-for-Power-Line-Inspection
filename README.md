@@ -70,8 +70,7 @@ Following the original publication, we refined the training pipeline to achieve 
 * Note: This is the corrected architecture diagram replacing previous versions.*
 
 ### Comparisons
-We compare against methods like PL-UNeXt [1], Plgan [2], and others [3][4], recording Recall, Precision, and Average IoU.
-
+We compare our method with PL-UNeXt [1], Plgan [2], and other approaches [3][4], reporting Recall, Precision, and Average IoU. Furthermore, following the comparison methodology of Plgan [2], we allow for a small pixel offset (tolerance) during the testing phase.
 ---
 
 ## 🚁 Extension: Stereo 3D Reconstruction & UAV Path Planning
