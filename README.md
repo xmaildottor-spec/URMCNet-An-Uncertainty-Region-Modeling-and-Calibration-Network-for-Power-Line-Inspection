@@ -18,11 +18,6 @@ To address this, we propose **URMCNet**, featuring:
 
 Experimental results on **VITLD** and **TTPLA** datasets demonstrate that URMCNet outperforms state-of-the-art methods.
 
-## 🏗️ Architecture
-
-![Network Architecture](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
-* Note: This is the corrected architecture diagram replacing previous versions.*
-
 ## 🎯 Motivation & Application
 
 **Note to Practitioners:**
@@ -65,6 +60,11 @@ Following the original publication, we refined the training pipeline to achieve 
 * **Optimizer:** AdamW (Betas: 0.9, 0.999)
 * **Learning Rate:** Initial LR `3e-4` with Polynomial Decay scheduler (`power=0.9`).
 * **Regularization:** Weight decay `0.005`.
+
+## 🏗️ Architecture
+
+![Network Architecture](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
+* Note: This is the corrected architecture diagram replacing previous versions.*
 
 ### Comparisons
 We compare against methods like PL-UNeXt [1], Plgan [2], and others [3][4], recording Recall, Precision, and Average IoU.
