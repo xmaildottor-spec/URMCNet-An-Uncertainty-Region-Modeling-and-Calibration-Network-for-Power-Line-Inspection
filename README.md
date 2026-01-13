@@ -57,8 +57,7 @@ The organized VITL dataset is available here:
 
 ## 🚀 Training & Performance Updates
 
-Following the original publication, we refined the training pipeline to achieve State-of-the-Art (SOTA) results.
-
+Following the original publication, we refined the training pipeline to achieve State-of-the-Art (SOTA) results. Through meticulous hyperparameter tuning, the configuration settings below enable the model to achieve performance metrics that significantly surpass those reported in the original paper.
 ### Optimized Hyperparameters
 * **Optimizer:** AdamW (Betas: 0.9, 0.999)
 * **Learning Rate:** Initial LR `3e-4` with Polynomial Decay scheduler (`power=0.9`).
