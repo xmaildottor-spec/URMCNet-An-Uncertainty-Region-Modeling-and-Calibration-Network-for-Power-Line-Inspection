@@ -19,10 +19,6 @@ Description:
 
 Usage:
     python image_mosaic_stitcher.py --input_dir "./data/patches" --output_dir "./data/merged"
-
-Author: [Your Name/Lab Name]
-Date: 2026-01-13
-License: MIT License
 """
 
 import os
@@ -175,4 +171,5 @@ def main():
     process_stitching(args.input_dir, args.output_dir, args.ext)
 
 if __name__ == "__main__":
+
     main()
