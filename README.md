@@ -18,6 +18,9 @@ To address this, we propose **URMCNet**, featuring:
 
 Experimental results on **VITLD** and **TTPLA** datasets demonstrate that URMCNet outperforms state-of-the-art methods.
 
+![Process Model](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/main.png)
+**
+
 ## 🎯 Motivation & Application
 
 **Note to Practitioners:**
@@ -74,9 +77,6 @@ We compare against methods like PL-UNeXt [1], Plgan [2], and others [3][4], reco
 ## 🚁 Extension: Stereo 3D Reconstruction & UAV Path Planning
 
 Beyond segmentation, we provide a demo for **stereo-camera 3D reconstruction** to assist in UAV obstacle avoidance.
-
-![Process Model](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/main.png)
-**
 
 ### Modules Overview
 
