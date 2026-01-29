@@ -63,6 +63,7 @@ Following the original publication, we refined the training pipeline to achieve 
 * **Optimizer:** AdamW (Betas: 0.9, 0.999)
 * **Learning Rate:** Initial LR `3e-4` with Polynomial Decay scheduler (`power=0.9`).
 * **Regularization:** Weight decay `0.005`.
+* The aforementioned hyperparameter settings enable the model to achieve performance metrics superior to those of the reported version.
 
 
 ![Network Architecture](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
