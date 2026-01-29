@@ -20,7 +20,7 @@ Experimental results on **VITLD** and **TTPLA** datasets demonstrate that URMCNe
 
 ## 🏗️ Architecture
 ![Process Model](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/main.png)
-**
+
 
 ## 🎯 Motivation & Application
 
