@@ -56,9 +56,8 @@ The organized VITL dataset is available here:
 > 2.  **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
 > 3.  **Preprocessing:** We recommend applying **CLAHE** (Contrast Limited Adaptive Histogram Equalization) to input images to highlight texture details.
 
-## 🚀 Training & Performance Updates
-
-Following the original publication, we refined the training pipeline to achieve State-of-the-Art (SOTA) results. Through meticulous hyperparameter tuning, the configuration settings below enable the model to achieve performance metrics that significantly surpass those reported in the original paper.
+## 🚀 Training 
+Following the original publication, we refined the training pipeline to achieve State-of-the-Art (SOTA) results. Through meticulous hyperparameter tuning, the configuration settings below enable the model to achieve performance metrics that surpass those reported in the original paper.
 ### Optimized Hyperparameters
 * **Optimizer:** AdamW (Betas: 0.9, 0.999)
 * **Learning Rate:** Initial LR `3e-4` with Polynomial Decay scheduler (`power=0.9`).
