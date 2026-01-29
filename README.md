@@ -65,7 +65,7 @@ Following the original publication, we refined the training pipeline to achieve 
 * **Regularization:** Weight decay `0.005`.
 * The aforementioned hyperparameter settings enable the model to achieve performance metrics superior to those of the reported version.
 
-
+The following errata are issued to correct an earlier versioning error:
 ![Network Architecture](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
 * Note: This is the corrected versions replacing previous versions.*
 
