@@ -68,7 +68,7 @@ Owing to an inadvertent mistake in the submission process, an intermediate draft
 ![Network Architecture](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
 * Note: This is the corrected versions replacing previous versions.*
 
-We compare our method with PL-UNeXt [1], Plgan [2], and other approaches [3][4], reporting Recall, Precision, and Average IoU. Furthermore, following the comparison methodology of Plgan [2], we allow for a small pixel offset (tolerance) during the testing phase.
+*Note: We compare our method with PL-UNeXt [1], Plgan [2], and other approaches [3][4], reporting Average Recall, Average Precision, and Macro-IoU. Furthermore, following the comparison methodology of Plgan [2], we allow for a small pixel offset (tolerance) during the testing phase.*
 
 ## 🙏 Acknowledgement
 
