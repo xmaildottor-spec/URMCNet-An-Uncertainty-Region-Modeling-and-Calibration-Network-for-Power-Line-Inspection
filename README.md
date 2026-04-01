@@ -51,6 +51,18 @@ The organized VITL dataset is available here:
 * `seed2_merge`: Merged (stitched) image patches from the original dataset.
 * `fn_GT` / `fp_GT`: Ground-truth labels for False Negative/Positive samples.
 
+## 📂 Visualization
+
+The visualization results of the dataset are available via the following link:
+
+| Dataset | Link | Description |
+| :--- | :--- | :--- |
+| **Model-B** | [Download Link](通过网盘分享的文件：TTPLA_pre_res
+链接: https://pan.baidu.com/s/1Ie431w52Sk3Cc-1tobDCJg?pwd=sdh6 提取码: sdh6) |
+| **Model-L** | [Download Link](通过网盘分享的文件：TTPLA_pre_star
+链接: https://pan.baidu.com/s/1yYp9tqTd6nPnhGLxaLq8MA 提取码: z7hu |
+
+
 > **⚠️ Important Notice:**
 > 1.  **Data Grouping:** In the original VITLD dataset, **every four images correspond to one sliced sample**. During testing, ensure images are processed in groups of four in their original order.
 > 2.  **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
