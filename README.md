@@ -69,7 +69,7 @@ The organized VITL dataset is available here:
 > 2.  **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
 > 3.  **Preprocessing:** We recommend applying **CLAHE** (Contrast Limited Adaptive Histogram Equalization) to input images to highlight texture details.
 
-## 💾 Pre-trained Weights (Model Zoo)
+## 💾 Trained Weights
 
 We provide the pre-trained weights for **Model-B** and **Model-L** trained on the power equipment dataset. All checkpoints are hosted on Baidu Netdisk.
 
