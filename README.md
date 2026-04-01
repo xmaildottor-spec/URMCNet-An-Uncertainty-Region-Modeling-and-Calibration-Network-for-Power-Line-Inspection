@@ -69,6 +69,25 @@ The organized VITL dataset is available here:
 > 2.  **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
 > 3.  **Preprocessing:** We recommend applying **CLAHE** (Contrast Limited Adaptive Histogram Equalization) to input images to highlight texture details.
 
+## 💾 Pre-trained Weights (Model Zoo)
+
+We provide the pre-trained weights for **Model-B** and **Model-L** trained on the power equipment dataset. All checkpoints are hosted on Baidu Netdisk.
+
+| Model Variant | Checkpoint (Baidu Netdisk) | Extraction Code | Description |
+| :--- | :--- | :---: | :--- |
+| 🚀 **Model-B** | [Download 🔗](https://pan.baidu.com/s/1cLHUeRUykt1wqWcyeRE3TQ?pwd=g2ap) | `g2ap` | **Base version**: Best performance for high-accuracy requirements. |
+| 🌟 **Model-L** | [Download 🔗](https://pan.baidu.com/s/1Uif9aNf7yGEWpG3RZ5WjDg?pwd=kuak) | `kuak` | **Large version**: Balanced performance and efficiency. |
+
+---
+
+### 🛠️ How to Use
+
+1. **Download:** Get the `.pth` (or `.onnx`) files from the links above.
+2. **Directory:** Place the downloaded weights into the `./checkpoints` folder of this project:
+   ```bash
+   mkdir checkpoints
+   # Move the downloaded files here
+
 ## 🚀 Training 
 Following the original publication, we refined the training pipeline to achieve State-of-the-Art (SOTA) results. Through meticulous hyperparameter tuning, the configuration settings below enable the model to achieve performance metrics that surpass those reported in the original paper.
 ### Optimized Hyperparameters
