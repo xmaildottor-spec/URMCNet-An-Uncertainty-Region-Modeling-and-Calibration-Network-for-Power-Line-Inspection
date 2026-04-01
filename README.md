@@ -31,6 +31,19 @@ UAV-based inspection is crucial for smart grids but fails in complex environment
 
 This technique is applicable not only to power lines but also to environmental monitoring, infrastructure inspection, and agricultural analysis.
 
+## 📂 Visualization
+
+Visualization results for the models on the TTPLA dataset are available via the Baidu Netdisk links below.
+
+| Model Variant | Access Link | Extraction Code | Description |
+| :--- | :--- | :---: | :--- |
+| 🚀 **Model-B** | [Download 🔗](https://pan.baidu.com/s/1Ie431w52Sk3Cc-1tobDCJg?pwd=sdh6) | `sdh6` | TTPLA Prediction Results |
+| 🌟 **Model-L** | [Download 🔗](https://pan.baidu.com/s/1yYp9tqTd6nPnhGLxaLq8MA?pwd=z7hu) | `z7hu` | TTPLA Prediction (Star version) |
+
+> [!TIP]
+> **Note:** After clicking the link, please enter the 4-digit **Extraction Code** to access the files.
+
+
 ## 📂 Datasets
 
 We evaluate our method on the following datasets:
@@ -50,18 +63,6 @@ The organized VITL dataset is available here:
 * `seed2`: Variant where IR images are converted to PNG for visualization.
 * `seed2_merge`: Merged (stitched) image patches from the original dataset.
 * `fn_GT` / `fp_GT`: Ground-truth labels for False Negative/Positive samples.
-
-## 📂 Visualization
-
-The visualization results of the dataset are available via the following link:
-
-| Dataset | Link | Description |
-| :--- | :--- | :--- |
-| **Model-B** | [Download Link](通过网盘分享的文件：TTPLA_pre_res
-链接: https://pan.baidu.com/s/1Ie431w52Sk3Cc-1tobDCJg?pwd=sdh6 提取码: sdh6) |
-| **Model-L** | [Download Link](通过网盘分享的文件：TTPLA_pre_star
-链接: https://pan.baidu.com/s/1yYp9tqTd6nPnhGLxaLq8MA 提取码: z7hu |
-
 
 > **⚠️ Important Notice:**
 > 1.  **Data Grouping:** In the original VITLD dataset, **every four images correspond to one sliced sample**. During testing, ensure images are processed in groups of four in their original order.
