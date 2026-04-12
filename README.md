@@ -96,7 +96,7 @@ Following the original publication, we refined the training pipeline to achieve 
 * **Regularization:** Weight decay `0.005`.
 
 ## 📚 Corrigendum
-Owing to an inadvertent mistake in the submission process, an intermediate draft of the figure was uploaded during peer review. We therefore present the corrected version below.
+Due to the inadvertent submission of a draft version during the editing process, the following corrections are made:
 ![Network Architecture](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
 
 * Note: We compare our method with PL-UNeXt [1], Plgan [2], and other approaches [3][4]..., reporting Average Recall, Average Precision, and Macro-IoU. Furthermore, following the comparison methodology of Plgan [2], we allow for a small pixel offset (tolerance) during the testing phase.*
