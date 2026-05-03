@@ -68,6 +68,8 @@ The organized VITL dataset is available here:
 > 1.  **Data Grouping:** In the original VITLD dataset, **every four images correspond to one sliced sample**. During testing, ensure images are processed in groups of four in their original order.
 > 2.  **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
 > 3.  **Preprocessing:** We recommend applying **CLAHE** (Contrast Limited Adaptive Histogram Equalization) to input images to highlight texture details.
+> 4.  **metrics:** Although binary classification performance is conventionally evaluated using foreground-specific metrics, we adopt class-macro-averaged metrics (encompassing both foreground and background) for fair and consistent comparisons with prior literature [1][3][4][5]. Additionally, our reported metrics are averaged over multiple independent trials to demonstrate model stability.
+
 
 ## 💾 Trained Weights
 
@@ -98,8 +100,6 @@ Following the original publication, we refined the training pipeline to achieve 
 ## 📚 Corrigendum
 Due to the inadvertent submission of a draft version during the editing process, the following corrections are made:
 ![Network Architecture](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
-
-* Although binary classification performance is conventionally evaluated using foreground-specific metrics, we adopt class-macro-averaged metrics (encompassing both foreground and background) for fair and consistent comparisons with prior literature [1][3][4][5]. Additionally, our reported metrics are averaged over multiple independent trials to demonstrate model stability.*
 
 ## 🙏 Acknowledgement
 
