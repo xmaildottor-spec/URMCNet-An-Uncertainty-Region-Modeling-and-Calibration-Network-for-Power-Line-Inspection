@@ -99,7 +99,7 @@ Following the original publication, we refined the training pipeline to achieve 
 Due to the inadvertent submission of a draft version during the editing process, the following corrections are made:
 ![Network Architecture](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/IMG.png)
 
-* Note: We compare our method with PL-UNeXt [1], Plgan [2], and other approaches [3][4]..., reporting Average Recall, Average Precision, and Macro-IoU. Furthermore, following the comparison methodology of Plgan [2], we allow for a small pixel offset (tolerance) during the testing phase.*
+* Although binary classification performance is conventionally evaluated using foreground-specific metrics, we adopt class-macro-averaged metrics (encompassing both foreground and background) for fair and consistent comparisons with prior literature [1][3][4][5]. Additionally, our reported metrics are averaged over multiple independent trials to demonstrate model stability.*
 
 ## 🙏 Acknowledgement
 
@@ -147,4 +147,4 @@ An Open3D-based visual simulation for real-time UAV movement debugging.
 2.  Abdelfattah R, Wang X, Wang S. *Plgan: Generative adversarial networks for power-line segmentation in aerial images*. IEEE TIP 2023.
 3.  Choi H, Koo G, Kim B J, et al. *Real-time power line detection network using visible light and infrared images*. IVCNZ 2019.
 4.  Zhang S, Zhang X, Ren W, et al. *Bringing RGB and IR Together: Hierarchical Multi-Modal Enhancement for Robust Transmission Line Detection*. arXiv 2025.
-
+5.  Choi H, Yun J P, Kim B J, et al. Attention-Based Multimodal Image Feature Fusion Module for Transmission Line Detection. IEEE Transactions on Industrial Informatics 2022.
