@@ -31,19 +31,6 @@ UAV-based inspection is crucial for smart grids but fails in complex environment
 
 This technique is applicable not only to power lines but also to environmental monitoring, infrastructure inspection, and agricultural analysis.
 
-## 📂 Visualization
-
-Visualization results for the models on the TTPLA dataset are available via the Baidu Netdisk links below.
-
-| Model Variant | Access Link | Extraction Code | Description |
-| :--- | :--- | :---: | :--- |
-| 🚀 **Model-B** | [Download 🔗](https://pan.baidu.com/s/1Ie431w52Sk3Cc-1tobDCJg?pwd=sdh6) | `sdh6` | TTPLA Prediction Results |
-| 🌟 **Model-L** | [Download 🔗](https://pan.baidu.com/s/1yYp9tqTd6nPnhGLxaLq8MA?pwd=z7hu) | `z7hu` | TTPLA Prediction (Star version) |
-
-> [!TIP]
-> **Note:** After clicking the link, please enter the 4-digit **Extraction Code** to access the files.
-
-
 ## 📂 Datasets
 
 We evaluate our method on the following datasets:
