@@ -44,11 +44,6 @@ def poly_lr(optimizer, cur_iter, max_iter, base_lr, power=0.9):
 # ================== Training Routine ==================
 def train_one_epoch(model, loader, optimizer, epoch, max_iter, args):
     model.train()
-  
-    # Optional: Dynamic weights (currently commented out in original logic)
-    # w_aux0 = get_decay_weight(epoch, args.epoch_max, start_val=0.8, end_val=0.1, power=0.9)
-    # w_aux1 = get_decay_weight(epoch, args.epoch_max, start_val=0.6, end_val=0.1, power=0.9)
-    # print(f"| Epoch {epoch} Weights | Aux0: {w_aux0:.4f} | Aux1: {w_aux1:.4f}")
 
     for it, (input_vl, input_ir, labels, labels_fn, labels_fp) in enumerate(loader):
         
@@ -70,9 +65,6 @@ def train_one_epoch(model, loader, optimizer, epoch, max_iter, args):
 
         # Static weighted sum computation
         loss = loss_final + 0.25 * loss_fn + 0.25 * loss_fp + 0.8 * loss_aux0 + 0.6 * loss_aux1 + loss_main   
-
-        # Alternative: Weighted sum using dynamic weights
-        # loss = loss_final + 0.25 * loss_fn + 0.25 * loss_fp + w_aux0 * loss_aux0 + w_aux1 * loss_aux1 + loss_main 
 
         optimizer.zero_grad()
         loss.backward()
@@ -98,17 +90,12 @@ def main(args):
     )
 
     # ------------------ Data Paths Configuration ------------------
-    # Get list of files in the directories
     vl_tra_list = os.listdir(args.train_vl_dir)
     ir_tra_list = os.listdir(args.train_ir_dir)
     gt_tra_list = os.listdir(args.train_gt_dir)
 
     fngt_tra_list = os.listdir(args.train_fngt_dir)
     fpgt_tra_list = os.listdir(args.train_fpgt_dir)
-
-    vl_test_list = os.listdir(args.test_vl_dir)
-    ir_test_list = os.listdir(args.test_ir_dir)
-    gt_test_list = os.listdir(args.test_gt_dir)
 
     # Convert relative paths to absolute paths dynamically
     absolute_vl_tra_list = [os.path.abspath(os.path.join(args.train_vl_dir, f)) for f in vl_tra_list]
@@ -118,24 +105,13 @@ def main(args):
     absolute_fngt_tra_list = [os.path.abspath(os.path.join(args.train_fngt_dir, f)) for f in fngt_tra_list]
     absolute_fpgt_tra_list = [os.path.abspath(os.path.join(args.train_fpgt_dir, f)) for f in fpgt_tra_list]
 
-    absolute_vl_test_list = [os.path.abspath(os.path.join(args.test_vl_dir, f)) for f in vl_test_list]
-    absolute_ir_test_list = [os.path.abspath(os.path.join(args.test_ir_dir, f)) for f in ir_test_list]
-    absolute_gt_test_list = [os.path.abspath(os.path.join(args.test_gt_dir, f)) for f in gt_test_list]
-
     train_dataset = PL_fpfn_dataset(
         absolute_vl_tra_list, absolute_ir_tra_list, absolute_gt_tra_list,
         absolute_fngt_tra_list, absolute_fpgt_tra_list, is_train=True
     )
-    test_dataset = PL_dataset(
-        absolute_vl_test_list, absolute_ir_test_list, absolute_gt_test_list, is_train=False
-    )
 
     train_loader = DataLoader(train_dataset, args.batch_size, shuffle=True, num_workers=args.num_workers, drop_last=True)
-    test_loader  = DataLoader(test_dataset, batch_size=4, shuffle=False, num_workers=args.num_workers)
-  
     train_loader.n_iter = len(train_loader)
-    test_loader.n_iter  = len(test_loader)
-
     max_iter = args.epoch_max * train_loader.n_iter
 
     # Ensure output directories exist
@@ -145,21 +121,13 @@ def main(args):
     for epoch in range(args.epoch_max):
         train_one_epoch(model, train_loader, optimizer, epoch, max_iter, args)
 
-        if epoch > 150 or epoch % 10 == 0 or epoch == 0:
-            iou, acc, f1, recall, precision = testing_Macro(model, test_loader)
-          
-            if iou > 0.650:
-                save_path = os.path.join(args.save_dir, f'{args.target}_{epoch}.pth')
-                torch.save(model.state_dict(), save_path)
-                print(f'Model saved to: {save_path}')
-
-            print('Evaluation OK!')
+        if epoch >= 100:
+            save_path = os.path.join(args.save_dir, f'{args.target}_{epoch}.pth')
+            torch.save(model.state_dict(), save_path)
+            print(f'| Epoch {epoch} | Model saved to: {save_path}')
+            
             with open(args.log_path, 'a') as log_file:
-                log_file.write(
-                    f'epoch: {epoch}   iou: {iou:.3f}  acc: {acc:.3f}  '
-                    f'f1: {f1:.3f}  recall: {recall:.3f}  precision: {precision:.3f}\n'
-                )
-            print(f'Metrics logged to: {args.log_path}')
+                log_file.write(f'epoch: {epoch}   Model saved to {save_path}\n')
 
     # ================== Record Training End Time ==================
     end_time_str = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
@@ -185,7 +153,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_workers', type=int, default=0, help='Number of data loading workers')
     parser.add_argument('--seed', type=int, default=4200, help='Random seed for reproducibility')
     
-    # I/O Paths (Refactored for public sharing)
+    # I/O Paths 
     parser.add_argument('--data_root', type=str, default='------', help='Root directory for dataset')
     parser.add_argument('--save_dir', type=str, default='------', help='Directory to save model weights')
     parser.add_argument('--log_path', type=str, default='------', help='Path to save training logs')
@@ -198,10 +166,6 @@ if __name__ == '__main__':
     args.train_gt_dir = os.path.join(args.data_root, '------')
     args.train_fngt_dir = os.path.join(args.data_root, '------')
     args.train_fpgt_dir = os.path.join(args.data_root, '------')
-
-    args.test_vl_dir = os.path.join(args.data_root, '------')
-    args.test_ir_dir = os.path.join(args.data_root, '------')
-    args.test_gt_dir = os.path.join(args.data_root, '------')
 
     setup_seed(args.seed)
 
