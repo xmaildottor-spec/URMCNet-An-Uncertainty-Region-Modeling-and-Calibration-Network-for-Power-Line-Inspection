@@ -98,7 +98,7 @@ Due to the high resolution and the extremely thin nature of power lines, standar
 *Result:* This approach minimizes noise while maximizing the **continuity of ultra-thin lines**, which is critical for accurate power line segmentation.
 
 #### 4. Evaluation Metrics
-To ensure a fair comparison and maintain consistency with existing literature, we focus on **foreground-specific metrics** (e.g., Foreground IoU). It is important to note that this evaluation protocol differs from the one we applied to the **VITLD dataset**.
+To ensure a fair comparison and maintain consistency with existing literature [1][2], we focus on **foreground-specific metrics** (e.g., Foreground IoU). It is important to note that this evaluation protocol differs from the one we applied to the **VITLD dataset**.
 
 #### 5. Implementation Code
 The scripts for data cleaning, resolution scaling, and the specialized downsampling method described above are provided in this repository. Please refer to the relevant preprocessing scripts for implementation details.
