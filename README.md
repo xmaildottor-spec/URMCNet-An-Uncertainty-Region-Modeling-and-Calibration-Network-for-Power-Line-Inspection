@@ -84,7 +84,8 @@ In this project, we utilize the **TTPLA (Transmission Tower and Power Line Analy
 * **Resolution:** The original image resolution is 3840 × 2160. Consistent with previous research, we downsample both images and masks to **512 × 512** for training and testing.
 * **Data Cleaning:** We observed minor labeling errors in the original dataset (e.g., transmission towers or rooftops mislabeled as power lines, or missed annotations). To ensure data quality, we manually filtered and **removed these incorrectly labeled images** from our pipeline.
 
-![Data Cleaning](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/TTPLA_F.pdf)
+Examples of incorrect labels (incorrect labels are not limited to the following two images).
+![Data Cleaning](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/TTPLA_F.png)
 
 #### 3. Downsampling Strategy
 Due to the high resolution and the extremely thin nature of power lines, standard downsampling methods often lead to **disconnected or missing labels**. To preserve topological continuity, we implemented the following strategy:
