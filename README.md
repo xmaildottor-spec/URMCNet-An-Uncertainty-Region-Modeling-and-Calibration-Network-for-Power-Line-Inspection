@@ -62,11 +62,12 @@ The organized VITLD dataset is available via Baidu Drive:
 * `seed2_merge`: Merged (stitched) image patches from the original dataset.
 * `fn_GT` / `fp_GT`: Ground-truth labels for False Negative/Positive samples.
 
-> **⚠️ Important Notice:**
-> 1. **Data Grouping:** In the original VITLD dataset, **every four images correspond to one sliced sample**. During testing, ensure images are processed in groups of four in their original order.
-> 2. **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
-> 3. **Preprocessing:** We recommend applying **CLAHE** (Contrast Limited Adaptive Histogram Equalization) to input images to highlight texture details.
-> 4. **Metrics:** Although binary classification performance is conventionally evaluated using foreground-specific metrics, we adopt class-macro-averaged metrics (encompassing both foreground and background) for fair and consistent comparisons with prior literature [1][3][4][5]. Additionally, our reported metrics are averaged over multiple independent trials to demonstrate model stability.
+### ⚠️ Important Notice
+
+1. **Data Grouping:** In the original VITLD dataset, **every four images correspond to one sliced sample**. During testing, ensure images are processed in groups of four in their original order.
+2. **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
+3. **Preprocessing:** We recommend applying **CLAHE** (Contrast Limited Adaptive Histogram Equalization) to input images to highlight texture details.
+4. **Metrics:** Although binary classification performance is conventionally evaluated using foreground-specific metrics, we adopt class-macro-averaged metrics (encompassing both foreground and background) for fair and consistent comparisons with prior literature [1][3][4][5]. Additionally, our reported metrics are averaged over multiple independent trials to demonstrate model stability.
 
 ### TTPLA Dataset Details
 
