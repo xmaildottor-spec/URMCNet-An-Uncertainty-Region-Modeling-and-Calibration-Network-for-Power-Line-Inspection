@@ -85,10 +85,6 @@ In this project, we utilize the **TTPLA (Transmission Tower and Power Line Analy
 * **Data Cleaning:** We observed minor labeling errors in the original dataset (e.g., transmission towers or rooftops mislabeled as power lines, or missed annotations). To ensure data quality, we manually filtered and **removed these incorrectly labeled images** from our pipeline.
 
 Examples of incorrect labels (incorrect labels are not limited to the following two images).
-![Data Cleaning](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/TTPLA_F.png)
-
-Examples of incorrect labels (incorrect labels are not limited to the following two images).
-
 <p align="center">
   <img src="https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/raw/main/TTPLA_F.png" alt="Data Cleaning" width="50%">
 </p>
