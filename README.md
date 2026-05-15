@@ -87,6 +87,12 @@ In this project, we utilize the **TTPLA (Transmission Tower and Power Line Analy
 Examples of incorrect labels (incorrect labels are not limited to the following two images).
 ![Data Cleaning](https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/blob/main/TTPLA_F.png)
 
+Examples of incorrect labels (incorrect labels are not limited to the following two images).
+
+<p align="center">
+  <img src="https://github.com/xmaildottor-spec/An-Uncertainty-Region-Modeling-and-Calibration-Network/raw/main/TTPLA_F.png" alt="Data Cleaning" width="50%">
+</p>
+
 #### 3. Downsampling Strategy
 Due to the high resolution and the extremely thin nature of power lines, standard downsampling methods often lead to **disconnected or missing labels**. To preserve topological continuity, we implemented the following strategy:
 1. **Area Interpolation (`cv2.INTER_AREA`)**: We use area-based interpolation to resize the masks. This computes the pixel average within the pooling region, ensuring that even the thinnest lines are preserved as "grayish" transition pixels instead of disappearing.
