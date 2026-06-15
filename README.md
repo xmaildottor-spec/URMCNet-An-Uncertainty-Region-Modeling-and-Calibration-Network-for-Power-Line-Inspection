@@ -58,7 +58,7 @@ We evaluate our method on the following datasets:
 2. **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
 3. **Preprocessing:** We recommend applying **CLAHE** (Contrast Limited Adaptive Histogram Equalization) to input images to highlight texture details.
 4. **Metrics:** Although binary classification performance is conventionally evaluated using foreground-specific metrics, we adopt class macro-averaged metrics (encompassing both foreground and background classes) to ensure fair and consistent comparisons with prior works [1][3][4][5].
-5. **Tolerance Mechanism：** To mitigate common 1-2 pixel subjective boundary deviations in manual annotations, we adopt the tolerance mechanism from [2]. By incorporating morphological dilation-based spatial relaxation into True Positive (TP) computation, this approach prevents strict metrics (e.g., IoU or F1-Score) from over-penalizing visually imperceptible spatial shifts.
+5. **Tolerance Mechanism：** To mitigate common 1-2 pixel subjective boundary deviations in manual annotations, we adopt the tolerance mechanism from [2]. By incorporating morphological dilation-based spatial relaxation into True Positive (TP) computation, this approach prevents strict metrics from over-penalizing visually imperceptible spatial shifts.
 
 The organized VITLD dataset is available via Baidu Drive:
 * **Link:** [Baidu Drive](https://pan.baidu.com/s/1gmfbENIXuLGKtdlqYTqrdA)
