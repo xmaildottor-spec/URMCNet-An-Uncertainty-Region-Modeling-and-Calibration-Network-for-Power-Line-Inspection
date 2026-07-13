@@ -59,7 +59,7 @@ We provide the visualization results of **URMCNet-B** and **URMCNet-L** tested o
 > * The images remain the raw network outputs and have **not been stitched or concatenated**.
 > * The displayed results were obtained by testing with **randomly selected weights**.
 
-| Model Variant | Visualization Results (Baidu Netdisk) | Extraction Code | Description |
+| Model Variant | Visualization Results | Extraction Code | Description |
 | :--- | :--- | :---: | :--- |
 | 🚀 **URMCNet-B** | [Download 🔗](https://pan.baidu.com/s/1dU-uvaIIeIuRHQdX4IDIEg?pwd=7scq ) | `7scq` | **Base version**: Visualization results of URMCNet-B on the VITLD dataset. |
 | 🌟 **URMCNet-L** | [Download 🔗](https://pan.baidu.com/s/1ujOlAGlbI6UjsCnLWSygHg?pwd=cijh) | `cijh` | **Large version**: Visualization results of URMCNet-L on the VITLD dataset. |
