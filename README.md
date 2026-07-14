@@ -113,8 +113,8 @@ We provide the pre-trained weights for **Model-B** and **Model-L** trained on th
 
 | Model Variant | Checkpoint (Baidu Netdisk) | Extraction Code | Description |
 | :--- | :--- | :---: | :--- |
-| 🚀 **Model-B** | [Download 🔗](https://pan.baidu.com/s/1cLHUeRUykt1wqWcyeRE3TQ?pwd=g2ap) | `g2ap` | **version-B**: Best performance for high-accuracy requirements. |
-| 🌟 **Model-L** | [Download 🔗](https://pan.baidu.com/s/1Uif9aNf7yGEWpG3RZ5WjDg?pwd=kuak) | `kuak` | **version-L**: Balanced performance and efficiency. |
+| 🚀 **Model-B** | [Download 🔗](https://pan.baidu.com/s/1cLHUeRUykt1wqWcyeRE3TQ?pwd=g2ap) | `g2ap` | **version-B** |
+| 🌟 **Model-L** | [Download 🔗](https://pan.baidu.com/s/1Uif9aNf7yGEWpG3RZ5WjDg?pwd=kuak) | `kuak` | **version-L** |
 
 ### 🛠️ How to Use
 
