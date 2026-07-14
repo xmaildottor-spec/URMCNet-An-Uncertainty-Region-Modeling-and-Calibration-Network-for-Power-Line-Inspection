@@ -142,7 +142,7 @@ class HFAFD(nn.Module):
         interaction_45 = f4 * f5_up_bilinear
         
         # Fusion
-        cat_1 = torch.cat([f5_up_bilinear, interaction_45], dim=1)
+        cat_1 = torch.cat([f5_tbr, interaction_45], dim=1)
         out_stage1 = self.fuse_stage1(cat_1)
         
         # Aux Output 2
