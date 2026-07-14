@@ -69,18 +69,7 @@ We provide the visualization results of **URMCNet-B** and **URMCNet-L** tested o
 1. **Data Grouping:** In the original VITLD dataset, **every four images correspond to one sliced sample**. During testing, ensure images are processed in groups of four in their original order.
 2. **Infrared Images:** IR images in this repo are for **visualization purposes only** and are not used in the network training/testing phases.
 3. **Preprocessing:** We recommend applying **CLAHE** (Contrast Limited Adaptive Histogram Equalization) to input images to highlight texture details.
-4. **Metrics:** Although binary classification performance is conventionally evaluated using foreground-specific metrics, we adopt class macro-averaged metrics (encompassing both foreground and background classes) to ensure fair and consistent comparisons with prior works [1][3][4][5].
-5. **Tolerance Mechanism：** To mitigate common 1-2 pixel subjective boundary deviations in manual annotations, we adopt the tolerance mechanism from [2]. By incorporating morphological dilation-based spatial relaxation into True Positive (TP) computation, this approach prevents strict metrics from over-penalizing visually imperceptible spatial shifts.
-
-The organized VITLD dataset is available via Baidu Drive:
-* **Link:** [Baidu Drive](https://pan.baidu.com/s/1gmfbENIXuLGKtdlqYTqrdA)
-* **Password:** `r8zw`
-
-**File Structure:**
-* `seed0`, `seed1`: Original datasets.
-* `seed2`: Variant where IR images are converted to PNG for visualization.
-* `seed2_merge`: Merged (stitched) image patches from the original dataset.
-* `fn_GT` / `fp_GT`: Ground-truth labels for False Negative/Positive samples.
+4. **Metrics:** We report the macro metrics evaluated on the original test set.
 
 ### TTPLA Dataset Details
 
