@@ -61,8 +61,8 @@ We provide the visualization results of **URMCNet-B** and **URMCNet-L** tested o
 
 | Model Variant | Visualization Results | Extraction Code | Description |
 | :--- | :--- | :---: | :--- |
-| 🚀 **URMCNet-B** | [Download 🔗](https://pan.baidu.com/s/1dU-uvaIIeIuRHQdX4IDIEg?pwd=7scq ) | `7scq` | **Base version**: Visualization results of URMCNet-B on the VITLD dataset. |
-| 🌟 **URMCNet-L** | [Download 🔗](https://pan.baidu.com/s/1ujOlAGlbI6UjsCnLWSygHg?pwd=cijh) | `cijh` | **Large version**: Visualization results of URMCNet-L on the VITLD dataset. |
+| 🚀 **URMCNet-B** | [Download 🔗](https://pan.baidu.com/s/1CY2REOW_xAqe6eqKrLc8Zw?pwd=nmkf) | `nmkf` | **version-B**: Visualization results of URMCNet-B on the VITLD dataset. |
+| 🌟 **URMCNet-B** | [Download 🔗](https://pan.baidu.com/s/156nlhSeR7dfalxtO6NE8CQ?pwd=md7x) | `md7x` | **version-B**: Visualization results of URMCNet-B on the TTPLA dataset. |
 
 ### VITLD Dataset Details
 
