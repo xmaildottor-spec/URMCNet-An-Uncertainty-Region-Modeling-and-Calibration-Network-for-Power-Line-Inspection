@@ -24,7 +24,7 @@ Experimental results on the **VITLD** and **TTPLA** datasets demonstrate that UR
 
 ## 🏗️ Architecture
 
-![Process Model](https://github.com/xmaildottor-spec/URMCNet-An-Uncertainty-Region-Modeling-and-Calibration-Network-for-Power-Line-Inspection-code/blob/main/main.png)
+![Process Model](https://github.com/xmaildottor-spec/URMCNet-An-Uncertainty-Region-Modeling-and-Calibration-Network-for-Power-Line-Inspection/blob/main/main.png)
 
 ---
 
@@ -112,7 +112,7 @@ We provide the pre-trained weights for **URMCNet-B** and **URMCNet-L** evaluated
 
 ## 📚 Corrigendum
 Due to the inadvertent submission of a draft version during the editing process, the following corrections are made:
-![Network Architecture](https://github.com/xmaildottor-spec/URMCNet-An-Uncertainty-Region-Modeling-and-Calibration-Network-for-Power-Line-Inspection-code/blob/main/IMGRE.png)
+![Network Architecture](https://github.com/xmaildottor-spec/URMCNet-An-Uncertainty-Region-Modeling-and-Calibration-Network-for-Power-Line-Inspection/blob/main/IMGRE.png)
 
 ## 🙏 Acknowledgement
 
